@@ -1,0 +1,56 @@
+* {
+  list-style-type: none;
+}
+
+.active {
+  border-bottom: 2px solid #0282f9;
+  color: #0282f9;
+}
+
+.mainDivHeader {
+  justify-content: space-between;
+
+  width: 80%;
+  margin: auto;
+
+  height: 100%;
+
+  padding: 10px;
+
+}
+
+.mainDivHeader img {
+  height: 100%;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav li {
+  margin: 0 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+nav a {
+          color: black;
+        text-decoration: none;
+}
+
+nav a:hover  {
+  color: #0282f9;
+}
+
+
+.secDiv {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.alignC {
+  align-items: center;
+}

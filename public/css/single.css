@@ -1,0 +1,28 @@
+.bg-white-50 {
+    background-color: rgb(236, 236, 236);
+}
+
+.bg-bluestripe {
+    height: 4rem;
+    background-color: #0282f9;
+    
+}
+
+.comicDesc img { 
+    position: absolute;
+    left: 2rem;
+    bottom: 21rem;
+}
+
+.comicDesc {
+    position: relative;
+}
+
+.bg-avaibility {
+    background-color: #55ba59;
+    color: white;
+}
+
+.bg-avaibility2 {
+    background-color: #55ba59;
+}

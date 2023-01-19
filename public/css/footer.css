@@ -1,0 +1,98 @@
+h2 {
+    color: #0274bf;
+    align-self: center;
+    padding: 10px;
+  }
+
+  ul {
+    padding: 0px;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .margin {
+    width: 80%;
+    margin: auto;
+  }
+
+  .foot1 {
+    background-image: url('/img/footer-bg.jpg');
+    color: white;
+    background-size: 100%;
+    position: relative;
+    height: 40rem;
+  }
+
+  .foot1 img {
+
+
+    height: 30rem;
+  }
+
+  .foot2 {
+    background-color: #303030;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .margin2 {
+    justify-content: space-around;
+  }
+
+  .foot2 img {
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .foot2 button {
+    align-self: center;
+    margin: 0;
+    padding: 10px;
+    border: 3px solid #0274bf;
+    color: white;
+    background-color: #303030;
+    cursor: pointer;
+
+  }
+
+  .between {
+    justify-content: space-between;
+  }
+
+  .navs {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+  }
+
+  .margleft {
+    padding-left: 40px;
+  }
+
+  li {
+    text-align: left;
+    color: grey;
+  }
+
+  nav h1 {
+    padding: 10px 0px;
+    text-align: left;
+  }
+
+  nav li {
+    line-height: 1.5rem;
+  }
+
+  li a {
+    text-decoration: none;
+    color: lightgray;
+  }
+
+  .logodc {
+    background-image: url('img/dc-logo-bg.png');
+    background-repeat: no-repeat;
+    width: 35rem;
+    height: 100%;
+  }
