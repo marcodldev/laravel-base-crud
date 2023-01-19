@@ -11,6 +11,6 @@ class ComicSeeder extends Seeder
      */
     public function run()
     {
-        //
+        // $array_fumetti = config('comics')
     }
 }
