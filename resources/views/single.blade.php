@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('titolo-pagina', 'DC-Single')
+@section('titolo-pagina')
+ DC-{{$elem->title}}
+@endsection
 
 @section('contenuto-main')
 
