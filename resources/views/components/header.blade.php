@@ -1,7 +1,10 @@
   <div class="mainDivHeader flex">
 
     <div class="secDiv">
-      <img src="{{asset('img/dc-logo.png') }}" alt="logo">
+        <a href=" {{ route('Comic') }}">
+            <img src="{{asset('img/dc-logo.png') }}" alt="logo">
+        </a>
+
     </div>
 
     <div class="flex alignC">
@@ -20,6 +23,6 @@
         </ul>
       </nav>
     </div>
-    
-    
+
+
   </div>
