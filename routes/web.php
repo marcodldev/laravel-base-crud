@@ -13,13 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'ComicController@index')->name('Comic');
 
-    return view('welcome', 'ComicController@index')->name('Comic');
-});
-
-Route::get('/single/{key}', function ($key) {
-
-
-    return view('single', 'SingleController@index');
-})->name('Show');
+Route::get('/single/{key}', 'SingleController@index')->name('Show');

@@ -10,18 +10,19 @@
     </div>
     <section class="sec1">
       <div class="cards">
-        <!-- {{-- @foreach ($arrayFumetti as $key => $elem)
+        @foreach ($comics as $elem)
         <div class="cardFumetto">
-            <img class="flex" src="{{$elem['thumb']}}" :alt="">
+            <img class="flex" src="{{$elem->thumb}}" :alt="">
             <h4 class="flex"> {{$elem['series']}}</h4>
-            {{-- <a class="button btn1" href="{{ route('single-page', compact('key')) }}">Clicca per info</a> --}}
+             <a class="button btn1" href="{{ route('Show',$elem->id) }}">Clicca per info</a>
             {{-- <a href="{{ route('single', compact('key')) }}" class="button btn1">Clicca qui per info</a> --}}
           </div>
 
-        {{-- @endforeach --}} -->
+        @endforeach
       </div>
       <div class="">
-        <button class="button btn1 loadmore">LOAD MORE</button>
+        {{-- <button class="button btn1 loadmore">LOAD MORE</button> --}}
+        <span class="text-center navPag d-flex justify-content-center">{{ $comics->links()}}</span>
       </div>
     </section>
 

@@ -2,12 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comic;
 use Illuminate\Http\Request;
 
 class SingleController extends Controller
 {
-    public function index(){
+    public function index($id){
 
-        return view('single');
+        // $comics = Comic::all();
+
+        // $data = [
+        //     'comics' => $comics
+        // ];
+
+        // return view('single',$data);
+
+        $elem = Comic::FindOrFail($id);
+
+        return view('single', compact('elem'));
     }
 }
