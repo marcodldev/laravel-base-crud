@@ -10,15 +10,15 @@
     </div>
     <section class="sec1">
       <div class="cards">
-        @foreach ($arrayFumetti as $key => $elem)
+        <!-- {{-- @foreach ($arrayFumetti as $key => $elem)
         <div class="cardFumetto">
             <img class="flex" src="{{$elem['thumb']}}" :alt="">
             <h4 class="flex"> {{$elem['series']}}</h4>
             {{-- <a class="button btn1" href="{{ route('single-page', compact('key')) }}">Clicca per info</a> --}}
-            <a href="{{ route('single', compact('key')) }}" class="button btn1">Clicca qui per info</a>
+            {{-- <a href="{{ route('single', compact('key')) }}" class="button btn1">Clicca qui per info</a> --}}
           </div>
-            
-        @endforeach
+
+        {{-- @endforeach --}} -->
       </div>
       <div class="">
         <button class="button btn1 loadmore">LOAD MORE</button>
@@ -32,7 +32,7 @@
             src="/img/buy-comics-digital-comics.png"
             alt="digitalcomics"
           />
-          <p>DIGITAL COMICS</p>
+          <p>DIGITAL COMIX</p>
         </div>
 
         <div class="flex">
@@ -66,5 +66,5 @@
       </div>
     </section>
   </div>
-    
+
 @endsection
