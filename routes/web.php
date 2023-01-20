@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'ComicController@index')->name('Comic');
 
-Route::get('/single/{key}', 'SingleController@index')->name('Show');
+
+// Route::get('/', 'ComicController@index')->name('Comic');
+
+//Route::get('/single/{key}', 'SingleController@index')->name('Show');
+
+Route::resource('/comic', ComicController::class);

@@ -1,7 +1,7 @@
   <div class="mainDivHeader flex">
 
     <div class="secDiv">
-        <a href=" {{ route('Comic') }}">
+        <a href=" {{ route('comic.index') }}">
             <img src="{{asset('img/dc-logo.png') }}" alt="logo">
         </a>
 

@@ -5,6 +5,13 @@
 @section('contenuto-main')
 
 <div class="mainDiv">
+
+    {{-- @if (session ('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+    @endif --}}
+
     <div class="sec2">
       <button class="relative button">CURRENT SERIES</button>
     </div>
@@ -14,7 +21,7 @@
         <div class="cardFumetto">
             <img class="flex" src="{{$elem->thumb}}" :alt="">
             <h4 class="flex"> {{$elem['series']}}</h4>
-             <a class="button btn1" href="{{ route('Show',$elem->id) }}">Clicca per info</a>
+             <a class="button btn1" href="{{ route('comic.show',$elem->id) }}">Clicca per info</a>
             {{-- <a href="{{ route('single', compact('key')) }}" class="button btn1">Clicca qui per info</a> --}}
           </div>
 
