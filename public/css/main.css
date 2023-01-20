@@ -99,3 +99,7 @@
     --bs-pagination-padding-y: 1.375rem;
     --bs-pagination-border-radius: 20px;
 }
+
+.bigfont {
+    font-size: xx-large;
+}

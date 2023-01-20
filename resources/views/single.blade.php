@@ -1,11 +1,10 @@
 @extends('layouts.app')
 
 @section('titolo-pagina')
- DC-{{$elem->title}}
+    DC-{{ $elem->title }}
 @endsection
 
 @section('contenuto-main')
-
     <div>
         <div class="sec2">
 
@@ -16,7 +15,7 @@
         <div class="container p-3">
             <div class="row d-flex flex-nowrap">
                 <div class="w-75 comicDesc">
-                    {{-- @foreach($comics as $elem) --}}
+                    {{-- @foreach ($comics as $elem) --}}
                     <img src="{{ $elem->thumb }}" alt="{{ $elem->series }}">
                     <h3>{{ $elem->title }}</h3>
                     <div class="d-flex">
@@ -49,7 +48,7 @@
             <div class="container d-flex">
                 <div class="row d-flex">
                     <div>
-                     {{--    <h1>Talent</h1>
+                        {{--    <h1>Talent</h1>
                         <h6 class="border-top border-bottom">Art By:{{ $elem->artists }} </h6>
                         <h6 class="border-top border-bottom">Written By: {{ $elem->writers }}</h6> --}}
                     </div>
@@ -59,10 +58,19 @@
                         <h6 class="border-top border-bottom">U.S.Price: {{ $elem->price }}</h6>
                         <h6 class="border-top border-bottom">On Sale Date: {{ $elem->sale_date }}</h6>
                     </div>
+                    <div class="">
+
+                        <form action="{{ route('comic.destroy', $elem->id) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-dark">
+                                <i class="fa-regular fa-circle-xmark bigfont"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
 
     </div>
-
 @endsection

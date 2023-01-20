@@ -30,7 +30,7 @@ class ComicController extends Controller
      */
     public function create()
     {
-        // return view('comic.create');
+        return view('comic.create');
     }
 
     /**
@@ -41,7 +41,7 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-     /*   $data = $request->all();
+       $data = $request->all();
 
        $request->validate([
             'title' => 'required'
@@ -51,9 +51,9 @@ class ComicController extends Controller
         $new_comic->fill($data);
         $new_comic->save();
 
-        return redirect()->route('single',$new_comic->id);
+        return redirect()->route('comic.show',$new_comic->id);
 
-        */
+
     }
 
     /**
@@ -112,8 +112,8 @@ class ComicController extends Controller
      */
     public function destroy($id)
     {
-        // $comic = Comic::findOrFail($id);
-        // $comic->delete();
-        // return redirect()->route('welcome')->with('success',"Hai eliminato il fumetto: $comic->'title' dal server");
+         $comic = Comic::findOrFail($id);
+         $comic->delete();
+         return redirect()->route('comic.index')->with('success',"Hai eliminato il fumetto: $comic->'title' dal server");
     }
 }
