@@ -44,8 +44,32 @@ class ComicController extends Controller
        $data = $request->all();
 
        $request->validate([
-            'title' => 'required'
-         ]);
+            'title' => 'required|max:50',
+            'description' => 'required|max:500',
+            'thumb' => 'required|max:50',
+            'price' => 'required|max:50',
+            'series' => 'required|max:50',
+            'sale_date' => 'required|max:50',
+            'type' => 'required|max:50',
+         ],
+        [
+            'title.required' => 'il campo "title" è obbligatorio, per favore compila il campo richiesto.',
+            'title.max' => 'ATTENZIONE: il campo "title" non deve superare i 50 caratteri.',
+            'description.required' => 'il campo "description" è obbligatorio, per favore compila il campo richiesto.',
+            'description.max' => 'ATTENZIONE: il campo "description" non deve superare i 500 caratteri.',
+            'thumb.required' => 'il campo "thumb" è obbligatorio, per favore compila il campo richiesto.',
+            'thumb.max' => 'ATTENZIONE: il campo "title" non deve superare i 50 caratteri.',
+            'price.required' => 'il campo "price" è obbligatorio, per favore compila il campo richiesto.',
+            'price.max' => 'ATTENZIONE: il campo "title" non deve superare i 50 caratteri.',
+            'series.required' => 'il campo "series" è obbligatorio, per favore compila il campo richiesto.',
+            'series.max' => 'ATTENZIONE: il campo "title" non deve superare i 50 caratteri.',
+            'sale_date.required' => 'il campo "sale_date" è obbligatorio, per favore compila il campo richiesto.',
+            'sale_date.max' => 'ATTENZIONE: il campo "title" non deve superare i 50 caratteri.',
+            'type.required' => 'il campo "type" è obbligatorio, per favore compila il campo richiesto.',
+            'type.max' => 'ATTENZIONE: il campo "title" non deve superare i 50 caratteri.',
+        ]
+
+        );
 
         $new_comic = new Comic();
         $new_comic->fill($data);

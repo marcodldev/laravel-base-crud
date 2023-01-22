@@ -13,33 +13,33 @@
 
             <div class="mb-3">
                 <label class="form-label" for="">Title</label>
-                <input value="{{ $comic->title }}" class="form-control" type="text" name="title" id="">
+                <input value="{{ $comic->title }}" class="form-control" type="text" name="title" id="" maxlength="50">
             </div>
             <div class="mb-3">
                 <label class="form-label" for="">Descrizione</label>
-                <textarea  name="description" class="form-control" id="" cols="30" rows="10">
+                <textarea  name="description" class="form-control" id="" cols="30" rows="10" maxlength="500">
                     {!! $comic->description !!}
                 </textarea>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="">Immagine</label>
-                <input value="{{ $comic->thumb }}" class="form-control" type="text" name="thumb" id="">
+                <input value="{{ $comic->thumb }}" class="form-control" type="text" name="thumb" id="" maxlength="50">
             </div>
             <div class="mb-3">
                 <label class="form-label" for="">Prezzo</label>
-                <input value="{{ $comic->price }}" class="form-control" type="number" name="price" step="0.01">
+                <input value="{{ $comic->price }}" class="form-control" type="number" name="price" step="0.01" maxlength="50">
             </div>
             <div class="mb-3">
                 <label class="form-label" for="">Serie</label>
-                <input value="{{ $comic->series }}" class="form-control" type="text" name="series" id="">
+                <input value="{{ $comic->series }}" class="form-control" type="text" name="series" id="" maxlength="50">
             </div>
             <div class="mb-3">
                 <label class="form-label" for="">Data di vendita</label>
-                <input value="{{ $comic->sale_date }}" class="form-control" type="date" name="sale_date" id="">
+                <input value="{{ $comic->sale_date }}" class="form-control" type="date" name="sale_date" id="" maxlength="50">
             </div>
             <div class="mb-3">
                 <label class="form-label" for="">Tipologia</label>
-                <input value="{{ $comic->type }}" class="form-control" type="text" name="type" id="">
+                <input value="{{ $comic->type }}" class="form-control" type="text" name="type" id="" maxlength="50">
             </div>
 
             <button type="submit" class="btn btn-success">Applica le modifiche!</button>
