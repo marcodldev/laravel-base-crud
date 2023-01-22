@@ -103,3 +103,9 @@
 .bigfont {
     font-size: xx-large;
 }
+
+.sec1home {
+    height: 30rem;
+    /* place-items: center;
+    place-content: center; */
+}
