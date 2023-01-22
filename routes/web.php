@@ -20,4 +20,6 @@ use Illuminate\Support\Facades\Route;
 
 //Route::get('/single/{key}', 'SingleController@index')->name('Show');
 
+Route::get('/', 'PageController@home')->name('home');
+
 Route::resource('/comic', ComicController::class);

@@ -11,7 +11,7 @@
       <nav >
         <ul class="flex">
           <li><a href="./single">CHARACTERS</a> </li>
-          <li class="active"><a href="#">COMICS</a> </li>
+          {{-- <li class="{{ route('./welcome')}}"><a href="#">COMICS</a> </li> --}}
           <li ><a href="#">MOVIES</a> </li>
           <li><a href="#">TV</a> </li>
           <li><a href="#">GAMES</a> </li>

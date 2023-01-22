@@ -58,15 +58,19 @@
                         <h6 class="border-top border-bottom">U.S.Price: {{ $elem->price }}</h6>
                         <h6 class="border-top border-bottom">On Sale Date: {{ $elem->sale_date }}</h6>
                     </div>
-                    <div class="">
+                    <div class="d-flex ">
 
                         <form action="{{ route('comic.destroy', $elem->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-dark">
                                 <i class="fa-regular fa-circle-xmark bigfont"></i>
+
                             </button>
                         </form>
+                        <a class="btn btn-dark mx-2" href="{{ route('comic.edit', $elem->id) }}">
+                            <i class="fa-solid fa-pencil bigfont"></i>
+                        </a>
                     </div>
                 </div>
             </div>
