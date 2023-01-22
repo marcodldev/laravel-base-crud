@@ -99,7 +99,7 @@ class ComicController extends Controller
             $comic = Comic::findOrFail($id);
             $comic->update($data);
 
-            return redirect()->route('comic.show',$comic->id);
+            return redirect()->route('comic.show',$comic->id)->with('success',"Hai modificato $comic->title ");
 
     }
 
@@ -113,6 +113,6 @@ class ComicController extends Controller
     {
          $comic = Comic::findOrFail($id);
          $comic->delete();
-         return redirect()->route('comic.index')->with('success',"Hai eliminato il fumetto: $comic->'title' dal server");
+         return redirect()->route('comic.index')->with('success',"Hai eliminato il fumetto: $comic->title dal server");
     }
 }

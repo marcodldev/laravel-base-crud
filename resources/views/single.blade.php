@@ -8,6 +8,12 @@
     <div>
         <div class="sec2">
 
+            @if (session('success'))
+            <div class="alert alert-success container p-3">
+                {{ session('success') }}
+            </div>
+        @endif
+
         </div>
         <div class="bg-bluestripe">
 
@@ -58,7 +64,7 @@
                         <h6 class="border-top border-bottom">U.S.Price: {{ $elem->price }}</h6>
                         <h6 class="border-top border-bottom">On Sale Date: {{ $elem->sale_date }}</h6>
                     </div>
-                    <div class="d-flex ">
+                    <div class="d-flex p-2">
 
                         <form action="{{ route('comic.destroy', $elem->id) }}" method="POST">
                             @csrf
